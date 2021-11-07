@@ -1,0 +1,47 @@
+.container {
+  padding: 50px 50px 150px;
+  height: auto;
+  background: #70b78b;
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+}
+
+.form {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 320px;
+  }
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #aeaeae;
+  color: rgb(111 67 224);
+}
+
+.btn {
+  background: #f2b245;
+  border-radius: 3px;
+  border: 0;
+  font-weight: 700;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #373737;
+  margin: 0 auto;
+}
