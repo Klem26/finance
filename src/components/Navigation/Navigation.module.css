@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #004b9c;
+  padding: 20px 15px;
+}
+
+.link {
+  background: #51b4dd;
+  border-radius: 3px;
+  border: 0;
+  font-weight: 700;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .link {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
+
+.link:hover {
+  color: #51b4dd;
+  background: rgb(247 245 251);
+}
+.link:focus {
+  color: #51b4dd;
+  background: rgb(247 245 251);
+}
