@@ -1,0 +1,41 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #0056a8;
+  font-weight: 500;
+}
+.articles__list {
+  list-style: none;
+}
+.articles__list_item {
+  box-shadow: 2px 0 9px -1px rgb(0 0 0 / 18%);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.title_h2 {
+  color: #154b9c;
+  margin: 10 px 15 px;
+}
+.description {
+  margin: 0 20 px;
+  color: #7d7d7d;
+}
