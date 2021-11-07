@@ -1,0 +1,130 @@
+.searchbar {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  background-color: #51b4dd;
+  box-shadow: 0px 2px 4px -1px rgba(129, 128, 128, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.searchFormBtn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+.searchFormBtn:hover {
+  opacity: 1;
+}
+
+.searchFormBtnLabel {
+  width: 22 px;
+  height: 12 px;
+  color: #51b4dd;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.searchFormInput {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.searchFormInput::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
+
+.tilesWrap {
+  padding: 0;
+  margin: 50px auto;
+  list-style: none;
+  text-align: center;
+  background: #ffffff;
+}
+.tilesWrap_list {
+  display: inline-block;
+  width: 20%;
+  height: 400px;
+  min-width: 200px;
+  max-width: 230px;
+  padding: 80px 20px 40px;
+  position: relative;
+  vertical-align: top;
+  margin: 10px;
+  font-family: 'helvetica', san-serif;
+  min-height: 25vh;
+  background: #154b9c;
+  border: 1px solid #5a6464;
+  text-align: left;
+}
+
+.tilesWrap_list:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.titleId {
+  font-size: 114px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.2;
+  top: 50px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+  color: #f5fcff;
+}
+.titleId:hover {
+  top: 0px;
+  opacity: 0.6;
+}
+.title {
+  font-size: 20px;
+  color: #f5f1f1;
+  margin-bottom: 5px;
+}
+.description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #b7b7b7;
+  margin-top: 5px;
+}
