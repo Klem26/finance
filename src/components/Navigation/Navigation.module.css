@@ -6,30 +6,45 @@
 }
 
 .link {
-  background: #51b4dd;
-  border-radius: 3px;
-  border: 0;
-  font-weight: 700;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   margin-left: 10px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
   .link {
-    padding: 10px 30px;
+    padding: 10px 10px;
     font-size: 20px;
+    margin-left: 20px;
   }
 }
 
 .link:hover {
   color: #51b4dd;
-  background: rgb(247 245 251);
+  text-decoration: underline;
 }
 .link:focus {
+  color: #51b4dd;
+  text-decoration: underline;
+}
+.linkLogin {
+  padding: 10px 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  background: #51b4dd;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.linkLogin:hover,
+.linkLogin:focus {
   color: #51b4dd;
   background: rgb(247 245 251);
 }

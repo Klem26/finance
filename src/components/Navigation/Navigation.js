@@ -6,12 +6,12 @@ import routes from '../../routes/routes';
 const Navigation = () => (
   <nav className={styles.nav}>
     <NavLink to={routes.users} className={styles.link}>
-      Calculate
+      Ноme
     </NavLink>
     <NavLink to={routes.request} className={styles.link}>
-      Request
+      News
     </NavLink>
-    <NavLink exact to={routes.login} className={styles.link}>
+    <NavLink exact to={routes.login} className={styles.linkLogin}>
       Login
     </NavLink>
   </nav>
