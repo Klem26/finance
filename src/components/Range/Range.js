@@ -28,26 +28,41 @@ const Range = () => {
 
   return (
     <div className={styles.wrapper}>
-      <input
-        className={styles.input}
-        name="money"
-        type="range"
-        min={minMoney}
-        max={maxMoney}
-        value={state.money}
-        onChange={handleChange}
-      />
-      <p>{state.money}</p>
-      <input
-        className={styles.input}
-        name="days"
-        type="range"
-        min={minDays}
-        max={maxDays}
-        value={state.days}
-        onChange={handleChange}
-      />
-      <p>{state.days}</p>
+      <div className={styles.inputWrapper}>
+        <div className={styles.wrapperTitle}>
+          <h2 className={styles.title}>Get money fast</h2>
+        </div>
+        <div className={styles.creditPeriod}>
+          <h3 className={styles.creditPeriodTitle}>Credit amount:</h3>
+          <p className={styles.money}>{state.money}</p>
+        </div>
+
+        <input
+          className={styles.input}
+          name="money"
+          type="range"
+          min={minMoney}
+          max={maxMoney}
+          value={state.money}
+          onChange={handleChange}
+        />
+        <div className={styles.creditPeriod}>
+          <h3 className={styles.creditPeriodTitle}>Period:</h3>
+          <p className={styles.days}>{state.days}</p>
+        </div>
+
+        <input
+          className={styles.input}
+          name="days"
+          type="range"
+          min={minDays}
+          max={maxDays}
+          value={state.days}
+          onChange={handleChange}
+        />
+
+        <a className={styles.rulBtn}>Apply for a loan</a>
+      </div>
     </div>
   );
 };

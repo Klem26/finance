@@ -18,9 +18,9 @@ const RequestView = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Filter />
       <h1 className={styles.title}>Posts</h1>
       <div className={styles.container}>
-        <Filter />
         <ul className={styles.articles__list}>
           {posts.length > 0 &&
             posts.map(post => (
