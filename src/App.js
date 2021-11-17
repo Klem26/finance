@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import AppBar from './components/AppBar/AppBar';
 import Container from './components/Container';
 import Loader from './components/Loader';
+import Footer from './components/Footer/Footer';
 import routes from './routes/routes';
 
 const LoginView = lazy(() =>
@@ -19,13 +20,15 @@ const App = () => {
   return (
     <Container>
       <AppBar />
-      <Suspense fallback={<Loader/>}>
+      <Suspense fallback={<Loader />}>
         <Switch>
           <Route exact path={routes.login} component={LoginView} />
           <Route exact path={routes.users} component={RangeViews} />
           <Route exact path={routes.request} component={RequestView} />
         </Switch>
       </Suspense>
+
+      <Footer />
     </Container>
   );
 };
