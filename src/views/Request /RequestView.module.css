@@ -23,6 +23,7 @@
 }
 .articles__list {
   list-style: none;
+  padding: 0;
 }
 .articles__list_item {
   box-shadow: 2px 0 9px -1px rgb(0 0 0 / 18%);

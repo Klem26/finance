@@ -28,6 +28,7 @@ const Range = () => {
 
   return (
     <div className={styles.wrapper}>
+      <h1 className={styles.mainTitle}>Online loan </h1>
       <div className={styles.inputWrapper}>
         <div className={styles.wrapperTitle}>
           <h2 className={styles.title}>Get money fast</h2>

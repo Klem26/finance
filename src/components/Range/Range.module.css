@@ -8,20 +8,32 @@
   height: 1280px;
   background-image: url('../../assets/images/business-g4c4515f64_1920.jpg');
 }
+@media only screen and (min-width: 320px) {
+  .wrapper {
+    height: 800px;
+    background-color: rgb(245, 113, 65);
+  }
+}
+
 .inputWrapper {
-  position: absolute;
-  top: 250px;
-  left: 40px;
-  background-color: rgb(248, 244, 240);
-  width: 450px;
+  width: 290px;
   height: 400px;
+  margin: 0 auto;
+  background-color: rgb(248, 244, 240);
   border-radius: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .inputWrapper {
+    width: 450px;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+  }
 }
 .money,
 .days {
   padding-left: 20px;
   margin-top: 0;
-
   font-weight: 800;
   font-size: 20px;
   line-height: 25px;
@@ -30,6 +42,13 @@
   width: 120px;
   border: none;
   border-bottom: 1px solid rgba(0, 73, 157, 0.43137254901960786);
+}
+@media only screen and (max-width: 767px) {
+  .days,
+  .money {
+    font-size: 16px;
+    width: 60px;
+  }
 }
 .wrapperTitle {
   color: #fff;
@@ -57,6 +76,12 @@
   color: #404040;
   font-size: 18px;
 }
+@media only screen and (max-width: 767px) {
+  .creditPeriodTitle {
+    font-size: 16px;
+  }
+}
+
 .rulBtn {
   background: #ed6608;
   box-shadow: 2px 4px 8px rgb(237 102 8 / 35%);
@@ -73,4 +98,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mainTitle {
+  padding-top: 120px;
+  word-spacing: normal;
+  width: 620px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 0;
+  margin-left: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .mainTitle {
+    width: 290px;
+    padding-top: 50px;
+    font-size: 34px;
+  }
 }
