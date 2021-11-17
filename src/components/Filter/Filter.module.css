@@ -80,18 +80,23 @@
   display: inline-block;
   width: 20%;
   height: 400px;
-  min-width: 200px;
-  max-width: 230px;
+  min-width: 280px;
+  /* max-width: 230px; */
   padding: 80px 20px 40px;
   position: relative;
   vertical-align: top;
-  margin: 10px;
+  margin: 10px 0;
   font-family: 'helvetica', san-serif;
   min-height: 25vh;
   background: #154b9c;
   border: 1px solid #5a6464;
   text-align: left;
   overflow: auto;
+}
+@media only screen and (min-width: 768px) {
+  .tilesWrap_list {
+    margin: 10px;
+  }
 }
 
 .tilesWrap_list:after {
